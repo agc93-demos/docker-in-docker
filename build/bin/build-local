@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+CMD='docker build -t fedora:pointless .'
+echo $CMD
+sleep 5
+echo "----------"
+$CMD

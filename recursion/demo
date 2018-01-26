@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+BUILD_CMD="docker build -t recursion:latest ."
+RUN_CMD="docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock recursion:latest"
+
+echo $BUILD_CMD
+sleep 5
+$BUILD_CMD
+echo "==========================="
+echo $RUN_CMD
+sleep 5
+$RUN_CMD
+
