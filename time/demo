@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+RUN_CMD="docker run -it --rm -v /usr/share/zoneinfo/America/Los_Angeles:/etc/localtime fedora:27 date"
+
+echo "==========================="
+echo $RUN_CMD
+sleep 5
+$RUN_CMD
+
