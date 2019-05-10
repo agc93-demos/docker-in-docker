@@ -1,1 +1,2 @@
-export PATH=$PATH:/home/agc93/Demo/did/build/bin
+#export PATH=$PATH:/home/$USER/Demo/sas-2019/build/bin
+export PATH=$PATH:$PWD/bin

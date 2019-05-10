@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-CMD="docker run -it --rm -v $PWD:/app -w /app -v /var/run/docker.sock:/var/run/docker.sock docker:latest docker build -t fedora:pointless . && docker run -it --rm fedora:pointless"
+CMD="docker run -it --rm -v $PWD:/app -w /app -v /var/run/docker.sock:/var/run/docker.sock docker:latest docker build -t fedora:pointless ."
+RUN_CMD="docker run -it --rm fedora:pointless"
 echo $CMD
+echo $RUN_CMD
 sleep 5
 echo "----------"
-$CMD
+$CMD && echo "-----------" && $RUN_CMD
